@@ -433,8 +433,8 @@ def pydantic_model_creator(
 
     # Here we de-dup to ensure that a uniquely named object is a unique object
     # This fixes some Pydantic constraints.
-    if _name in _MODEL_INDEX:
-        return _MODEL_INDEX[_name]
+    # if _name in _MODEL_INDEX:
+    #     return _MODEL_INDEX[_name]
 
     # Creating Pydantic class for the properties generated before
     properties["model_config"] = pconfig
